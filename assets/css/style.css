@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Japanese 2020";
+    src: url("../fonts/JAPANESE_2020.ttf") format("ttf");
+}
+
+body {
+    background-color: #E8E8E8;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mainContainer {
+    display: grid;
+    grid-template-columns: 75px 245px 195px 290px 300px 290px 195px 245px 75px;
+    grid-template-rows: 25px 60px 250px 70px 580px 80px;
+}
+
+#rules {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TABLEAU */
+
+#tableau {
+    grid-row: 2/4;
+    grid-column: 4 / 7;
+    display: grid;
+    grid-template-columns: 290px 300px 290px;
+    grid-template-rows: 60px 250px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+/* PLAYER CTN */
+
+#playerCtn {
+    grid-row: 1/3;
+    width: 290px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#playerTitle {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #577399;
+    font-weight: bold;
+}
+
+#mancheTitle {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #FB7923;
+}
+
+#playerScore {
+    width: 200px;
+    height: 100px;
+    color: #FB7923;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
+
+#mancheCtn {
+    margin-top: 20px;
+    display: grid;
+    height: auto;
+    width: auto;
+    grid-template-columns: 40px 100px 100px 40px;
+    grid-template-rows: 50px 20px;
+}
+
+#playerCircleCtn {
+    border: 1px solid #707070;
+    grid-column: 2/3;
+    grid-row: 1;
+    border-right: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.widthBall {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+}
+
+#iaCircleCtn {
+    border: 1px solid #707070;
+    grid-column: 3/4;
+    grid-row: 1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*GAME TITLE CTN */
+
+#gameTitleCtn {
+    display: flex;
+    flex-direction: column;
+}
