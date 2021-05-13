@@ -32,14 +32,15 @@ body {
     border-radius: 5px;
     background-color: white;
     cursor: pointer;
-}
-
-#rulesText {
     color: #707070;
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0%;
-    padding: 0%;
+}
+
+#rules:hover {
+    color: white;
+    background-color: #285943;
+    border: white 1px solid;
 }
 
 
@@ -257,6 +258,7 @@ body {
     justify-content: space-around;
     color: #577399;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 #iaPercentCtn {
@@ -269,6 +271,7 @@ body {
     justify-content: space-around;
     color: #C83E4D;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 
@@ -284,14 +287,15 @@ body {
     border-radius: 5px;
     background-color: white;
     cursor: pointer;
-}
-
-#restartText {
-    color: #707070;
     font-size: 1.2em;
     font-weight: bold;
-    margin: 0%;
-    padding: 0%;
+    color: #707070;
+}
+
+#restart:hover {
+    background-color: #FB7923;
+    color: white;
+    border: white 1px solid;
 }
 
 
