@@ -255,6 +255,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: #577399;
+    font-size: 1.2em;
 }
 
 #iaPercentCtn {
@@ -265,6 +267,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: #C83E4D;
+    font-size: 1.2em;
 }
 
 

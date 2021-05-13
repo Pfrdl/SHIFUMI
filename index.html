@@ -49,7 +49,7 @@
 
             <div iv id="playerCtn">
                 <h3 id="playerTitle">JOUEUR</h3>
-                <div id="playerScore"></div>
+                <div id="playerScore">0</div>
                 <div id="mancheTitle">MANCHE</div>
                 <div id="mancheCtn">
                     <div id="playerCircleCtn">
@@ -80,16 +80,12 @@
 
             <div id="iaCtn">
                 <h3 id="iaTitle">ORDINATEUR</h3>
-                <div id="iaScore"></div>
+                <div id="iaScore">0</div>
                 <div id="percentTitle">POURCENTAGE</div>
                 <div id="percentCtn">
-                    <div id="playerPercentCtn">
-                        <div id="playerPercent">
-                        </div>
+                    <div id="playerPercentCtn">%
                     </div>
-                    <div id="iaPercentCtn">
-                        <div id="iaPercent">
-                        </div>
+                    <div id="iaPercentCtn">%
                     </div>
                 </div>
             </div>
@@ -103,9 +99,9 @@
 
         <!--  ICONS JOUEURS CTN-->
         <div id="playerIconCtn">
-            <div id="playerStoneCtn" class="widthIcon element hvr-icon-pulse-grow"><i class="fas fa-hand-rock hvr-icon"></i></div>
-            <div id="playerPaperCtn" class="widthIcon element hvr-icon-pulse-grow"><i class="fas fa-hand-paper hvr-icon"></i></div>
-            <div id="playerScissorCtn" class="widthIcon element hvr-icon-pulse-grow"><i class="fas fa-hand-scissors hvr-icon"></i></div>
+            <button id="playerStoneCtn" value="pierre" class="widthIcon element hvr-icon-pulse-grow btn"><i class="fas fa-hand-rock hvr-icon"></i></button>
+            <button id="playerPaperCtn" value="feuille" class="widthIcon element hvr-icon-pulse-grow btn"><i class="fas fa-hand-paper hvr-icon"></i></button>
+            <button id="playerScissorCtn" value="ciseaux" class="widthIcon element hvr-icon-pulse-grow btn"><i class="fas fa-hand-scissors hvr-icon"></i></button>
         </div>
 
         <!-- TERRAIN DE JEU -->
