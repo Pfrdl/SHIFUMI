@@ -18,8 +18,27 @@
     <div id="mainContainer">
         <!-- BOUTONS REGLES DU JEU -->
 
-        <div id="rules">
-            <p>Régles du jeu</p>
+        <div id="rules" data-toggle="modal" data-target="#rulesModal">
+            <div class="modal fade align-middle" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center text-center">
+                            <h5 class="modal-title modalTitle mx-auto" id="exampleModalLongTitle">SHI FU MI</h5>
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <strong>Régles du jeu</strong> : déplacer la feuille la pierre ou le ciseau sur la partie gauche du terrain de jeu. Le pourcentage est calculé en fonction des manches gagnées. <br> <strong> But du jeu :</strong> gagner 3 manches.
+                            Il faut gagner les trois manches pour gagner la partie. Le jeu est terminé quand le joueur à gagner la partie.
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn  btnModal" data-dismiss="modal">Fermer</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="rulesText">Régles du jeu</p>
         </div>
 
         <!-- TABLEAU DES SCORES-->
@@ -30,18 +49,18 @@
 
             <div iv id="playerCtn">
                 <h3 id="playerTitle">JOUEUR</h3>
-                <div id="playerScore">1</div>
-                <h4 id="mancheTitle">MANCHE</h4>
+                <div id="playerScore"></div>
+                <div id="mancheTitle">MANCHE</div>
                 <div id="mancheCtn">
                     <div id="playerCircleCtn">
-                        <div class="ball widthBall"></div>
-                        <div class="ball widthBall"></div>
-                        <div class="ball widthBall"></div>
+                        <div class="ball1 widthBall"></div>
+                        <div class="ball2 widthBall"></div>
+                        <div class="ball3 widthBall"></div>
                     </div>
                     <div id="iaCircleCtn">
-                        <div class="ball widthBall"></div>
-                        <div class="ball widthBall"></div>
-                        <div class="ball widthBall"></div>
+                        <div class="ball4 widthBall"></div>
+                        <div class="ball5 widthBall"></div>
+                        <div class="ball6 widthBall"></div>
                     </div>
 
                 </div>
@@ -49,19 +68,20 @@
             <!-- GAME TITLE CTN -->
 
             <div id='gameTitleCtn'>
-                <h1>SHI FU MI</h1>
-                <P>VS</P>
-                <p>PARTIE</p>
+                <h1 id="gameTitle">SHI FU MI</h1>
+                <P id="vs">VS</P>
+                <p id="partie">RESULTAT</p>
                 <div id="partieCtn">
+                    <div id="partieBloc"></div>
                 </div>
             </div>
 
             <!-- IA SCORE CTN -->
 
             <div id="iaCtn">
-                <h3>IA</h3>
-                <div id="iaScore">1</div>
-                <h4>POURCENTAGE</h4>
+                <h3 id="iaTitle">ORDINATEUR</h3>
+                <div id="iaScore"></div>
+                <div id="percentTitle">POURCENTAGE</div>
                 <div id="percentCtn">
                     <div id="playerPercentCtn">
                         <div id="playerPercent">
@@ -78,29 +98,36 @@
         <!-- BOUTON REJOUER -->
 
         <div id="restart">
-            <p>REJOUER</p>
+            <p id="restartText">REJOUER</p>
         </div>
 
         <!--  ICONS JOUEURS CTN-->
         <div id="playerIconCtn">
-            <div id="playerStoneCtn"></div>
-            <div id="playerPaperCtn"></div>
-            <div id="playerScissorCtn"></div>
+            <div id="playerStoneCtn" class="widthIcon element hvr-icon-pulse-grow"><i class="fas fa-hand-rock hvr-icon"></i></div>
+            <div id="playerPaperCtn" class="widthIcon element hvr-icon-pulse-grow"><i class="fas fa-hand-paper hvr-icon"></i></div>
+            <div id="playerScissorCtn" class="widthIcon element hvr-icon-pulse-grow"><i class="fas fa-hand-scissors hvr-icon"></i></div>
         </div>
 
         <!-- TERRAIN DE JEU -->
+        <div id="fieldGeneral">
+            <div id="playerFieldCtn">
 
-        <div id="playerFieldCtn"></div>
-        <div id="middleFieldCtn"></div>
-        <div id="iaFieldCtn"></div>
+            </div>
 
+            <div id="circleCenter"></div>
+
+            <div id="middleFieldCtn">
+                <div id="verticalLine"></div>
+            </div>
+            <div id="iaFieldCtn"></div>
+        </div>
 
 
         <!--  ICONS IA CTN -->
         <div id="iaIconCtn">
-            <div id="iaStoneCtn"></div>
-            <div id="iaPaperCtn"></div>
-            <div id="iaScissorCtn"></div>
+            <div id="iaStoneCtn" class="widthIcon"><i class="fas fa-hand-rock stone"></i></div>
+            <div id="iaPaperCtn" class="widthIcon"><i class="fas fa-hand-paper paper"></i></div>
+            <div id="iaScissorCtn" class="widthIcon"><i class="fas fa-hand-scissors scissor"></i></div>
         </div>
 
 
