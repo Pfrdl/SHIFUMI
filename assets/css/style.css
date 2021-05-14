@@ -307,6 +307,10 @@ body {
     justify-content: space-around;
 }
 
+.element:hover {
+    background-color: #FB7923;
+}
+
 .widthIcon {
     height: 100px;
     width: 100px;
@@ -321,6 +325,12 @@ body {
     font-size: 3em;
     color: #FB7923;
     cursor: pointer;
+}
+
+.rock:hover,
+.papers:hover,
+.scissors:hover {
+    color: #fff;
 }
 
 
