@@ -15,9 +15,9 @@ $(document).ready(function() {
 
     $('button').click(function() {
 
-        let stone = $('.stone').hide()
-        let paper = $('.paper').hide()
-        let scissor = $('.scissor').hide()
+        let stone = $('.pierre').hide()
+        let paper = $('.feuille').hide()
+        let scissor = $('.ciseaux').hide()
         let playerValue = $(this).val();
         let iaValue = elements[Math.floor(Math.random() * elements.length)];
         let message = $('#partieBloc').html("");
