@@ -12,7 +12,9 @@ $(document).ready(function() {
     let game = 0
 
 
+
     $('button').click(function() {
+
 
 
         let stone = $('.stone').hide()
@@ -58,7 +60,10 @@ $(document).ready(function() {
         let affichageplayer = $('#playerScore').text(playerScore);
         let affichageIa = $('#iaScore').text(iaScore)
 
+        if (iaScore === 3 || playerScore === 3) {
 
+            message.html("Terminé !");
+        }
 
 
 
@@ -70,6 +75,7 @@ $(document).ready(function() {
 
 
         })
+
 
 
 
