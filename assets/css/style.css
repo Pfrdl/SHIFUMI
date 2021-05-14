@@ -129,6 +129,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: #707070;
+    font-size: 1.2em;
 }
 
 #iaCircleCtn {
@@ -139,6 +141,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: #707070;
+    font-size: 1.2em;
 }
 
 .widthBall {
@@ -586,4 +590,11 @@ body {
         grid-column: 5/7;
         grid-row: 7/8;
     }
+}
+
+
+/* SWAL */
+
+.swal-button {
+    display: none;
 }
