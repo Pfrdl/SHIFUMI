@@ -425,6 +425,7 @@ body {
         grid-template-columns: 20px 85px 70px 80px 70px 85px 20px;
         grid-template-rows: 45px 80px 40px;
         border-radius: 0%;
+        box-shadow: none;
     }
     #playerCtn {
         grid-row: 1/4;
