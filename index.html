@@ -19,7 +19,6 @@
 <body>
     <div id="mainContainer">
         <!-- BOUTONS REGLES DU JEU -->
-
         <div id="rules" data-toggle="modal" data-target="#rulesModal">Régles du jeu</div>
         <div class="modal fade align-middle bd-example-modal-sm" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -31,18 +30,12 @@
                         <strong>Régles du jeu</strong> : cliquer sur la feuille la pierre ou le ciseau pour choisir votre coup. Le pourcentage est calculé en fonction des manches gagnées. <br> <strong> But du jeu :</strong> gagner 3 manches. Il faut gagner
                         les trois manches pour gagner la partie. Le jeu est terminé quand le joueur à gagner la partie.
                     </div>
-
                 </div>
             </div>
         </div>
-
-
         <!-- TABLEAU DES SCORES-->
-
         <div id="tableau">
-
             <!-- JOUEUR SCORE CTN -->
-
             <div iv id="playerCtn">
                 <h3 id="playerTitle">JOUEUR</h3>
                 <div id="playerScore">0</div>
@@ -52,11 +45,9 @@
                     </div>
                     <div id="iaCircleCtn">
                     </div>
-
                 </div>
             </div>
             <!-- GAME TITLE CTN -->
-
             <div id='gameTitleCtn'>
                 <h1 id="gameTitle">SHI FU MI</h1>
                 <P id="vs">VS</P>
@@ -65,9 +56,7 @@
                     <div id="partieBloc"></div>
                 </div>
             </div>
-
             <!-- IA SCORE CTN -->
-
             <div id="iaCtn">
                 <h3 id="iaTitle">ORDINATEUR</h3>
                 <div id="iaScore">0</div>
@@ -79,49 +68,33 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- BOUTON REJOUER -->
-
         <div id="restart">
             REJOUER
         </div>
-
         <!--  ICONS JOUEURS CTN-->
         <div id="playerIconCtn">
             <button id="playerStoneCtn" value="pierre" class="widthIcon element hvr-icon-pulse-grow btn"><i class="fas fa-hand-rock hvr-icon rock"></i></button>
             <button id="playerPaperCtn" value="feuille" class="widthIcon element hvr-icon-pulse-grow btn"><i class="fas fa-hand-paper hvr-icon papers"></i></button>
             <button id="playerScissorCtn" value="ciseaux" class="widthIcon element hvr-icon-pulse-grow btn"><i class="fas fa-hand-scissors hvr-icon scissors"></i></button>
         </div>
-
         <!-- TERRAIN DE JEU -->
         <div id="fieldGeneral">
             <div id="playerFieldCtn">
-
             </div>
-
             <div id="circleCenter"></div>
-
             <div id="middleFieldCtn">
                 <div id="verticalLine"></div>
             </div>
             <div id="iaFieldCtn"></div>
         </div>
-
-
         <!--  ICONS IA CTN -->
         <div id="iaIconCtn">
             <div id="iaStoneCtn" class="widthIcon"><i class="fas fa-hand-rock pierre"></i></div>
             <div id="iaPaperCtn" class="widthIcon"><i class="fas fa-hand-paper feuille"></i></div>
             <div id="iaScissorCtn" class="widthIcon"><i class="fas fa-hand-scissors ciseaux"></i></div>
         </div>
-
-
-
-
-
-
-
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
